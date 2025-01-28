@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio de Sesión</title>
+  <!-- Incluye Firebase -->
+  <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #f0f0f0;
+    }
+    .login-container {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      width: 300px;
+    }
+    input {
+      width: calc(100% - 20px);
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+    button {
+      padding: 10px 15px;
+      background: #4b5596;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      width: 100%;
+    }
+    button:hover {
+      background: #242d68;
+    }
+    .error {
+      color: red;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h1>Iniciar Sesión</h1>
+    <input type="email" id="email" placeholder="Correo Electrónico" required>
+    <input type="password" id="password" placeholder="Contraseña" required>
+    <button onclick="login()">Entrar</button>
+    <p class="error" id="error"></p>
+  </div>
+
+  <script>
+  // Configuración de Firebase
+  const firebaseConfig = {
+  apiKey: "AIzaSyDqxo0dX5Hk4Oje_eS-L8NgpEOHGGuvGh4",
+  authDomain: "tv-premium-32436.firebaseapp.com",
+  projectId: "tv-premium-32436",
+  storageBucket: "tv-premium-32436.firebasestorage.app",
+  messagingSenderId: "896286689678",
+  appId: "1:896286689678:web:9e3a80bf1b720ed7d87cdf",
+  measurementId: "G-29BB8MW5YJ"
+};
+
+// Inicializar Firebase
+const app = firebase.initializeApp(firebaseConfig);
+const auth = firebase.auth();
+
+
+    // Función para iniciar sesión
+    function login() {
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      const error = document.getElementById("error");
+
+      auth.signInWithEmailAndPassword(email, password)
+        .then(() => {
+          window.location.href = "sstv 3.0.html"; // Redirigir al contenido
+        })
+        .catch(err => {
+          error.textContent = "Error: " + err.message;
+        });
+    }
+  </script>
+</body>
+</html>
