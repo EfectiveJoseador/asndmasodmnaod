@@ -91,7 +91,7 @@
 
         if (response.ok) {
           // Redirigir si las credenciales son correctas
-          window.location.href = "index.html";
+          window.location.href = "login.html";
         } else {
           const errorData = await response.json();
           document.getElementById('errorMessage').textContent = errorData.message || 'Credenciales incorrectas';
