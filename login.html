@@ -4,9 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inicio de Sesión</title>
-  <!-- Incluye Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js"></script>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -57,38 +54,6 @@
     <button onclick="login()">Entrar</button>
     <p class="error" id="error"></p>
   </div>
-
-  <script>
-  // Configuración de Firebase
-  const firebaseConfig = {
-  apiKey: "AIzaSyDqxo0dX5Hk4Oje_eS-L8NgpEOHGGuvGh4",
-  authDomain: "tv-premium-32436.firebaseapp.com",
-  projectId: "tv-premium-32436",
-  storageBucket: "tv-premium-32436.firebasestorage.app",
-  messagingSenderId: "896286689678",
-  appId: "1:896286689678:web:9e3a80bf1b720ed7d87cdf",
-  measurementId: "G-29BB8MW5YJ"
-};
-
-// Inicializar Firebase
-const app = firebase.initializeApp(firebaseConfig);
-const auth = firebase.auth();
-
-
-    // Función para iniciar sesión
-    function login() {
-      const email = document.getElementById("email").value;
-      const password = document.getElementById("password").value;
-      const error = document.getElementById("error");
-
-      auth.signInWithEmailAndPassword(email, password)
-        .then(() => {
-          window.location.href = "script.html"; // Redirigir al contenido
-        })
-        .catch(err => {
-          error.textContent = "Error: " + err.message;
-        });
-    }
   </script>
 </body>
 </html>
