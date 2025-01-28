@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TV Deportes Premium</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary-color: #4b5596;
+      --secondary-color: #242d68;
+      --accent-color: #e07bf1;
+      --background: linear-gradient(135deg, #cfcfcf 0%, #4d57b4 100%);
+      --card-background: rgb(255, 255, 255);
+      --card-shadow: 0 10px 20px rgba(0,0,0,0.05);
+      --card-border: 1px solid rgba(0,0,0,0.1);
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: var(--background);
+      color: #495057;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .header {
+      text-align: center;
+      font-family: 'Oswald', sans-serif;
+      font-size: 1.5rem;
+      color: var(--primary-color);
+      margin-bottom: 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      padding: 20px;
+    }
+
+    .section {
+      background: var(--card-background);
+      border-radius: 15px;
+      padding: 1.5rem;
+      box-shadow: var(--card-shadow);
+      transition: transform 0.3s ease;
+      border: var(--card-border);
+    }
+
+    .section:hover {
+      transform: translateY(-5px);
+    }
+
+    h1 {
+      font-family: 'Oswald', sans-serif;
+      color: var(--primary-color);
+      text-align: center;
+      font-size: 2.5rem;
+      margin: 2rem 0;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      position: relative;
+    }
+
+    h1::after {
+      content: '';
+      display: block;
+      width: 60px;
+      height: 3px;
+      background: var(--secondary-color);
+      margin: 10px auto;
+    }
+
+    h2 {
+      color: var(--primary-color);
+      font-size: 1.4rem;
+      margin: 1.5rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--accent-color);
+      background: var(--secondary-color);
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .button {
+      display: block;
+      padding: 12px 20px;
+      margin: 0.8rem 0;
+      background: var(--primary-color);
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      transition: all 0.3s ease;
+      position: relative;
+      text-align: center;
+    }
+
+    .button:hover {
+      background: var(--secondary-color);
+      transform: translateX(5px);
+      color: white;
+    }
+
+    .channel-badge {
+      background: var(--accent-color);
+      color: var(--primary-color);
+      padding: 3px 8px;
+      border-radius: 5px;
+      font-size: 0.8rem;
+      margin-left: 10px;
+      font-weight: bold;
+      float: right;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+      }
+      
+      h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    Hecho por @camisetazo._ en Instagram
+  </div>
+  <div class="container">
+    <div class="section">
+      <h1>LIGAS</h1>
+      <h2>⚽ DAZN La Liga 1080</h2>
+      <a class="button" href="acestream://75251ba975132ec9a202806ba5bf606e87280c96/">Enlace 0</a>
+      <a class="button" href="acestream://94d34491106e00394835c8cb68aa94481339b53f">Enlace 1</a>
+      <a class="button" href="acestream://1bc437bce57b4b0450f6d1f8d818b7e97000745e">Enlace 2</a>
+      <a class="button" href="acestream://8c8c1e047a1c5ed213ba74722a5345dc55c3c0eb">Enlace 3</a>
+
+      <h2>⚽ La Liga 2</h2>
+      <a class="button" href="acestream://83c6c4942d69f4aa324aa746c5d7dbfd7d1572b3">Enlace 1</a>
+      <a class="button" href="acestream://f31a586422c9244196c810c84b6c85da350318a5">Enlace 2</a>
+
+      <h2>⚽ La Liga 3</h2>
+      <a class="button" href="acestream://ebe14f1edeb49f2253e3b355a8beeadc9b4f0bc4">Enlace 1</a>
+      <a class="button" href="acestream://835639b89db00cc0d94660da3c10b6e38bfbcdc1">Enlace 2</a>
+
+      <h2>⚽ La Liga 4</h2>
+      <a class="button" href="acestream://68697ea4f261289d97bbc3418ad3cbc4180aa32f">Enlace 1</a>
+
+      <h2>⚽ La Liga Multiaudio</h2>
+      <a class="button" href="acestream://d3de78aebe544611a2347f54d5796bd87f16c92d">Enlace 1</a>
+      <a class="button" href="acestream://6d05b31e5e8fdae312fbd57897363a7b10ddb163">Enlace 2</a>
+      <a class="button" href="acestream://110d441ddc9713a7452588770d2bc85504672f47">Enlace 3</a>
+      <a class="button" href="acestream://ec29289b0b14756e686c03a501bae1efa05be70c">Enlace 4</a>
+      <a class="button" href="acestream://6de4794cd02f88f14354b5996823413a59a1de0f">Enlace 5</a>
+
+      <h2>⚽ La Liga 2 Multiaudio</h2>
+      <a class="button" href="acestream://97ba38d47680954be40e48bd8f43e17222fefecb">Enlace 1</a>
+      <a class="button" href="acestream://51dbbfb42f8091e4ea7a2186b566a40e780953d9">Enlace 2</a>
+
+      <h2>🏆 Copa del Rey</h2>
+      <a class="button" href="acestream://f6beccbc4eea4bc0cda43b3e8ac14790a98b61b4">Enlace 1</a>
+      <a class="button" href="acestream://b51f2d9a15b6956a44385b6be531bcabeb099d9d">Enlace 2</a>
+
+      <h2>🍻 La Liga TV Bar</h2>
+      <a class="button" href="acestream://608b0faf7d3d25f6fe5dba13d5e4b4142949990e">Enlace 1</a>
+      <a class="button" href="acestream://94d34491106e00394835c8cb68aa94481339b53f">Enlace 2</a>
+
+      <h2>🏟️ M. La Liga Smartbank</h2>
+      <a class="button" href="acestream://b2706a7ffbea236a3b398139a3a606ada664c0eb">Enlace 1</a>
+      <a class="button" href="acestream://121f719ebb94193c6086ef92865cf9b197750980">Enlace 2</a>
+
+      <h2>🏟️ M. La Liga Smartbank 2</h2>
+      <a class="button" href="acestream://0cfdfde1b70623b8c210b0f7301be2a87456481d">Enlace 1</a>
+      <a class="button" href="acestream://0a335406bad0b658aeddb2d38f8c0614b2e5623a">Enlace 2</a>
+
+      <h2>🏟️ M. La Liga Smartbank 3</h2>
+      <a class="button" href="acestream://fefd45ed6ff415e05f1341b7d9da2988eacd13ea">Enlace 1</a>
+    </div>
+
+    <div class="section">
+      <h1>CHAMPIONS</h1>
+      <h2>🏆 M. Liga de Campeones 1</h2>
+      <a class="button" href="acestream://1d79a7543d691666135669f89f3541f54e2dd0a9/">Enlace 1</a>
+      <a class="button" href="acestream://931b1984badcb821df7b47a66ac0835ac871b51c/">Enlace 2</a>
+
+      <h2>🏆 M. Liga de Campeones 2</h2>
+      <a class="button" href="acestream://c070cdb701fc46bb79d17568d99fc64620443d63">Enlace 1</a>
+      <a class="button" href="acestream://abdf9058786a48623d0de51a3adb414ae10b6e72">Enlace 2</a>
+
+      <h2>🏆 M. Liga de Campeones 3</h2>
+      <a class="button" href="acestream://3618edda333dad5374ac2c801f5f14483934b97d">Enlace 1</a>
+      <a class="button" href="acestream://0b348cc1ae499e810729661878764a0fab88ab69">Enlace 2</a>
+
+      <h2>🏆 M. Liga de Campeones 4</h2>
+      <a class="button" href="acestream://65a18a6bd83918a9586b673fec12405aaf4e9f7d">Enlace 1</a>
+
+      <h2>🏆 M. Liga de Campeones 5</h2>
+      <a class="button" href="acestream://11744c25a594e17d587ed0871fe40ff21b4bd1e0">Enlace 1</a>
+
+      <h2>🏆 M. Liga de Campeones 6</h2>
+      <a class="button" href="acestream://fdda1f0dd8c33fbdc5a66ab98e291f570cae67cd">Enlace 1</a>
+
+      <h2>🏆 M. Liga de Campeones 7</h2>
+      <a class="button" href="acestream://b7f47db93dced60f54e8f89e2366ed061b534049">Enlace 1</a>
+
+      <h2>🏆 M. Liga de Campeones 8</h2>
+      <a class="button" href="acestream://d298c6e5c8be71f5995b45289c6388b225318b3c">Enlace 1</a>
+
+      <h2>🏆 M. Liga de Campeones 9</h2>
+      <a class="button" href="acestream://2d7c4cfb3987b652a779afc894cca2fccbbacf21">Enlace 1</a>
+      <a class="button" href="acestream://c056f9e180cd7d40963129a17ff54f4ee8259353">Enlace 2</a>
+      <a class="button" href="acestream://a12a16f74cf12799d4475ae867dc61eb60e1ba2e">Enlace 3</a>
+      <a class="button" href="acestream://df7d145fcaf0566db4098d2f10236185d92bc9fd">Enlace 4</a>
+      <a class="button" href="acestream://bdfe9ebe62d690c1b13eef4346d72e618cfbe804">Enlace 5</a>
+
+      <h2>🏆 M. Liga de Campeones Multiaudio</h2>
+      <a class="button" href="acestream://0a26e20f39845e928411e09a124374fccb6e1478">Enlace 1</a>
+      <a class="button" href="acestream://775abd8697715c48a357906d40734ccd2a10513c">Enlace 2</a>
+    </div>
+
+    <div class="section">
+      <h1>DAZN</h1>
+      <h2>🏎️ DAZN F1</h2>
+      <a class="button" href="acestream://d6281d4e6310269b416180442a470d23a4a99dc9">Enlace 1</a>
+      <a class="button" href="acestream://2c6e4c897661e6b0257bfe931b66d20b2ec763b6">Enlace 2</a>
+      <a class="button" href="acestream://71eef80158aa8b37f3dc59f6793c6696df9a2dfa">Enlace 3</a>
+      <a class="button" href="acestream://268289e7a3c5209960b53b4d43c8c65fab294b85">Enlace 4</a>
+
+      <h2>📺 DAZN 1</h2>
+      <a class="button" href="acestream://7cf0086fa7d478f51dbba952865c79e66cb9add5">Enlace 1</a>
+      <a class="button" href="acestream://35c7f0c966ecde3390f4510bb4caded40018c07a">Enlace 2</a>
+
+      <h2>📺 DAZN 2</h2>
+      <a class="button" href="acestream://ca923c9873fd206a41c1e83ff8fc40e3cf323c9a">Enlace 1</a>
+      <a class="button" href="acestream://a929eeec1268d69d1556a2e3ace793b2577d8810">Enlace 2</a>
+
+      <h2>📺 DAZN 3</h2>
+      <a class="button" href="acestream://19cd05c7ae26f22737ae5728b571ca36abd8a2e8">Enlace 1</a>
+
+      <h2>📺 DAZN 4</h2>
+      <a class="button" href="acestream://4e83f23945ab3e43982045f88ec31daaa4683102">Enlace 1</a>
+    </div>
+
+    <div class="section">
+      <h1>MOVISTAR</h1>
+      <h2>📺 M. #Vamos</h2>
+      <a class="button" href="acestream://d03c13b6723f66155d7a0df3692a3b073fe630f2">Enlace 1</a>
+      <a class="button" href="acestream://12ba546d229bc39f01c3c18988a034b215fe6adb">Enlace 2</a>
+
+      <h2>📺 Movistar Plus</h2>
+      <a class="button" href="acestream://56ac8e227d526e722624675ccdd91b0cc850582f">Enlace 1</a>
+
+      <h2>📺 M. Deportes</h2>
+      <a class="button" href="acestream://55d4602cb22b0d8a33c10c2c2f42dae64a9e8895">Enlace 1</a>
+      <a class="button" href="acestream://3a74d9869b13e763476800740c6625e715a39879">Enlace 2</a>
+      <h2>📺 M. Deportes 2</h2>
+      <a class="button" href="acestream://639c561dd57fa3fc91fde715caeb696c5efb7ce7">Enlace 1</a>
+
+      <h2>📺 M. Deportes 3</h2>
+      <a class="button" href="acestream://571bff4d12b1791eb99dbf20bec38e630693a6a3">Enlace 1</a>
+
+      <h2>📺 M. Deportes 4</h2>
+      <a class="button" href="acestream://b4d1308a61e4caf8c06ac3d6ce89d165c015c2fb">Enlace 1</a>
+
+      <h2>📺 M. Deportes 5</h2>
+      <a class="button" href="acestream://fcc0fd75bf1dba40b108fcf0d3514e0e549bfbac">Enlace 1</a>
+
+      <h2>📺 M. Deportes 6</h2>
+      <a class="button" href="acestream://cc5782d37ae6b6e0bab396dd64074982d0879046">Enlace 1</a>
+
+      <h2>📺 M. Deportes 7</h2>
+      <a class="button" href="acestream://070f82d6443a52962d6a2ed9954c979b29404932">Enlace 1</a>
+
+      <h2>⛳ GOLF</h2>
+      <a class="button" href="acestream://f41f1096862767289620be5bd85727f946a434db">Enlace 1</a>
+      <a class="button" href="acestream://e258e75e0e802afa5fcc53d46b47d8801a254ad5">Enlace 2</a>
+
+      <h2>🌍 BBC EARTH</h2>
+      <a class="button" href="acestream://aa82e7d4f03061f2144a2f4be22f2e2210d42280/">Enlace 1</a>
+    </div>
+
+    <div class="section">
+      <h1>EUROSPORT</h1>
+      <h2>🏅 EUROSPORT 1</h2>
+      <a class="button" href="acestream://16ffa1713f42aa27317ee039a2bd0cdbc89a1580">Enlace 1</a>
+
+      <h2>🏅 EUROSPORT 2</h2>
+      <a class="button" href="acestream://98784fa0714190de289f42eb5b84e405df7e685a">Enlace 1</a>
+    </div>
+
+    <div class="section">
+      <h1>ENLACES INGLESES</h1>
+      <h2>🏀 NBA ABC (TOPSTREAMER)</h2>
+      <a class="button" href="https://reddit.nbabite.com/">Enlace</a>
+
+      <h2>📺 ESPN HD</h2>
+      <a class="button" href="acestream://4b4907de51ec11087d4bed5876f2a0c68264f442/">Enlace 1</a>
+      <a class="button" href="acestream://79f10c6c6168e42bfc606f3f7b9e5f3ca79dedab/">Enlace 2</a>
+
+      <h2>📺 ESPN 2 HD</h2>
+      <a class="button" href="acestream://3e0ba6867173f345d482d80c771f1a5dc3b37e63/">Enlace 1</a>
+      <a class="button" href="acestream://664eb5fe460b96941aed633959a845b185cd8394/">Enlace 2</a>
+
+      <h2>📺 ESPN 3 HD</h2>
+      <a class="button" href="acestream://a97cafedefe189d63e52eadc5c9bbc351b01540a/">Enlace</a>
+
+      <h2>📺 ESPN 4 HD</h2>
+      <a class="button" href="acestream://5f9b19c57195cc28ab81e0ec8cad03b55118687a/">Enlace</a>
+
+      <h2>🏀 NBA TV</h2>
+      <a class="button" href="acestream://e72d03fb9694164317260f684470be9ab781ed95/">Enlace</a>
+
+      <h2>📺 FOX SPORTS 1</h2>
+      <a class="button" href="acestream://c9c062941fbecb16ce29437f346ea7177d720898/">Enlace</a>
+
+      <h2>📺 FOX SPORTS 2</h2>
+      <a class="button" href="acestream://cba8d369eac629b577750edb90370cd1c5fb03b7/">Enlace</a>
+
+      <h2>🥋 MMA (UFC)</h2>
+      <a class="button" href="acestream://2d4b53402ff6158ec5aa4b38a80a773b5e00da0d/">Enlace</a>
+    </div>
+  </div>
+</body>
+  <footer>
+       <p>Copyright (c) 2025 camisetazo._
+
+Queda estrictamente prohibida la copia, distribución, sublicencia o venta de este código de página web y los archivos de documentación asociados (en adelante, el "Código"), sin la autorización expresa por escrito del titular del copyright. 
+
+Se permite únicamente el uso, visualización y modificación del Código con fines personales o educativos, siempre y cuando se incluya de manera visible y completa el aviso de copyright anterior y este permiso en todas las copias o partes sustanciales del Código.
+
+Cualquier uso no autorizado del Código será considerado una violación de los derechos de autor y podrá ser perseguido conforme a la ley aplicable.</p>
+  </footer>
+</html>
