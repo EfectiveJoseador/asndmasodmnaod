@@ -6,39 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TV Deportes Premium</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Oswald:wght@500&display=swap" rel="stylesheet">
-  <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.17.1/firebase-auth.js"></script>
-  <script>
-    // Configuración de Firebase
-    const firebaseConfig = {
-      apiKey: "AIzaSyDqxo0dX5Hk4Oje_eS-L8NgpEOHGGuvGh4",
-      authDomain: "tv-premium-32436.firebaseapp.com",
-      projectId: "tv-premium-32436",
-      storageBucket: "tv-premium-32436.firebasestorage.app",
-      messagingSenderId: "896286689678",
-      appId: "1:896286689678:web:9e3a80bf1b720ed7d87cdf",
-      measurementId: "G-29BB8MW5YJ"
-    };
-
-    // Inicializar Firebase
-    const app = firebase.initializeApp(firebaseConfig);
-    const auth = firebase.auth();
-
-    // Verificar si el usuario está autenticado
-    firebase.auth().onAuthStateChanged(user => {
-      if (!user) {
-        alert("Debes iniciar sesión primero.");
-        window.location.href = "login.html"; // Redirigir al login si no está autenticado
-      }
-    });
-
-    // Función para cerrar sesión
-    function logout() {
-      auth.signOut().then(() => {
-        alert("Has cerrado sesión.");
-        window.location.href = "login.html";
-      });
-    }
   </script>
   <style>
     :root {
