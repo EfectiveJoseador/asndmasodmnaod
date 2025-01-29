@@ -60,6 +60,12 @@
       margin-top: 10px;
       display: none;
     }
+
+    .credentials-info {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #666;
+    }
   </style>
 </head>
 <body>
@@ -71,6 +77,11 @@
       <button type="submit">Ingresar</button>
     </form>
     <div class="error-message" id="errorMessage">Usuario o contraseña incorrectos</div>
+    <div class="credentials-info">
+      <p>Credenciales de prueba:</p>
+      <p>Usuario: u</p>
+      <p>Contraseña: c</p>
+    </div>
   </div>
 
   <script>
@@ -91,7 +102,7 @@
 
         if (response.ok) {
           // Redirigir si las credenciales son correctas
-          window.location.href = "login.html";
+          window.location.href = "/index";
         } else {
           const errorData = await response.json();
           document.getElementById('errorMessage').textContent = errorData.message || 'Credenciales incorrectas';
