@@ -85,33 +85,21 @@
   </div>
 
   <script>
-    document.getElementById('loginForm').addEventListener('submit', async function(event) {
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
       event.preventDefault();
-
+      
       const username = document.getElementById('username').value;
       const password = document.getElementById('password').value;
-
-      try {
-        const response = await fetch('http://localhost:3000/login', {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify({ username, password })
-        });
-
-        if (response.ok) {
-          // Redirigir si las credenciales son correctas
-          window.location.href = "/index";
-        } else {
-          const errorData = await response.json();
-          document.getElementById('errorMessage').textContent = errorData.message || 'Credenciales incorrectas';
-          document.getElementById('errorMessage').style.display = 'block';
-        }
-      } catch (error) {
-        document.getElementById('errorMessage').textContent = 'Error en el servidor. Intente más tarde.';
+      
+      // Credenciales de prueba
+      const validUsername = 'u';
+      const validPassword = 'c';
+      
+      if (username === validUsername && password === validPassword) {
+        window.location.href = "/index";
+      } else {
+        document.getElementById('errorMessage').textContent = 'Usuario o contraseña incorrectos';
         document.getElementById('errorMessage').style.display = 'block';
-        console.error('Error:', error);
       }
     });
   </script>
